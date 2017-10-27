@@ -22,7 +22,6 @@ public class MyListener implements UpdateListener {
             {
                 e.printStackTrace();
             }
-            //or you can cast
         }
     }
 }
