@@ -9,10 +9,12 @@ public class TemperatureEvent {
      */
     String sensorID;
     Double temperature;
+    Date timestamp;
 
-    public TemperatureEvent(String sensorID, Double temperature) {
+    public TemperatureEvent(String sensorID, Double temperature, Date timestamp) {
         this.sensorID = sensorID;
         this.temperature = temperature;
+        this.timestamp = timestamp;
     }
 
     public String getSensorID() {
@@ -31,5 +33,11 @@ public class TemperatureEvent {
         this.temperature = temperature;
     }
 
+    public Date getTimestamp() {
+        return timestamp;
+    }
 
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
 }
